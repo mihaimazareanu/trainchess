@@ -1,4 +1,4 @@
-import { ChessboardContainer, Square } from '@/pages/chessboard/ChessboardStyles';
+import { ChessboardContainer, Square } from '@/styles/ChessboardStyles';
 import React from 'react';
 
 const Chessboard = ({ start }) => {
