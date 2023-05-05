@@ -19,15 +19,12 @@ const Chessboard = ({ start }) => {
         (Math.abs(columnLetters.indexOf(position[0]) - columnLetters.indexOf(start[0])) === 2 &&
         Math.abs(parseInt(position[1]) - parseInt(start[1])) === 1));
       
-  squares.push(
-    <Square isWhiteSquare={isWhiteSquare} isStartSquare={isStartSquare} isKnightMove={isKnightMove} squareSize={squareSize} key={`${i}-${j}`}>{position}</Square>
+        squares.push(<Square isWhiteSquare={isWhiteSquare} isStartSquare={isStartSquare} isKnightMove={isKnightMove} squareSize={squareSize} key={`${i}-${j}`}>{position}</Square>
     );
   }
 }
 
   return <ChessboardContainer>{squares}</ChessboardContainer>;
 };
-
-
 
 export default Chessboard;
